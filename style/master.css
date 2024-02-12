@@ -1,0 +1,623 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main > header {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+main > header > .row {
+  width: 100%;
+  height: 100%;
+}
+main > header > .row > * {
+  height: 100%;
+}
+main > header > .row > div:first-of-type {
+  width: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > header > .row > div:last-of-type {
+  width: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > header > .row > div:last-of-type > a > i {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+}
+main > header > .row > div:last-of-type > a > i:hover {
+  color: #f81f1f;
+}
+main > header > .row > nav {
+  width: 74%;
+  margin-top: 40px;
+}
+main > header > .row > nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main > header > .row > nav > ul > li {
+  height: 100%;
+  position: relative;
+}
+main > header > .row > nav > ul > li:hover > ul {
+  opacity: 1;
+}
+main > header > .row > nav > ul > li > a {
+  height: 100%;
+  width: 100%;
+  font-size: 17px;
+  padding-left: 30px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > header > .row > nav > ul > li > a:hover {
+  color: #f81f1f;
+}
+main > header > .row > nav > ul > li > ul {
+  z-index: 10;
+  opacity: 0;
+  overflow: hidden;
+  flex-wrap: wrap;
+  width: 200%;
+  background-color: white;
+  transition: 0.4s;
+  position: absolute;
+  left: 0;
+  border-top: 3px solid #f81f1f;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 3px 3px rgba(220, 220, 220, 0.827);
+  margin-top: 35px;
+}
+main > header > .row > nav > ul > li > ul > li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+main > header > .row > nav > ul > li > ul > li > a {
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+}
+main > header > .row > nav > ul > li > ul > li > a:hover {
+  color: #f81f1f;
+}
+main > .slider1 {
+  width: 100%;
+  background-color: #f0f0f2;
+}
+main > .slider1 > .row {
+  width: 100%;
+  height: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+main > .slider1 > .row > div:first-of-type {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .slider1 > .row > div:first-of-type > section > h1 {
+  font-size: 100px;
+  margin: 30px 0;
+  color: #0b1c39;
+}
+main > .slider1 > .row > div:first-of-type > section > p {
+  font-size: 20px;
+  color: #212025;
+}
+main > .slider1 > .row > div:first-of-type > section > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(63, 62, 62);
+  position: relative;
+}
+main > .slider1 > .row > div:first-of-type > section > a:hover::before {
+  width: 100%;
+  height: 100%;
+}
+main > .slider1 > .row > div:first-of-type > section > a::before {
+  display: flex;
+  content: "";
+  width: 0%;
+  background-color: #f81f1f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+main > .slider1 > .row > div:first-of-type > section > a > p {
+  font-size: 16px;
+  color: white;
+  z-index: 10;
+}
+main > .slider1 > .row > div:last-of-type {
+  width: 30%;
+}
+main > .slider1 > .row > div:last-of-type > figure {
+  width: 100%;
+  height: 100%;
+}
+main > .slider1 > .row > div:last-of-type > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .slider2 {
+  width: 100%;
+  margin-top: 80px;
+}
+main > .slider2 > h2 {
+  font-size: 40px;
+  margin-left: 10%;
+}
+main > .slider3 {
+  width: 100%;
+  margin-top: 80px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+main > .slider3 > .row {
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+main > .slider3 > .row > figure {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  transition: 0.4s;
+  filter: grayscale(50%);
+}
+main > .slider3 > .row > figure:hover {
+  filter: grayscale(0%);
+  transform: scale(103%);
+}
+main > .slider3 > .row > figure > img {
+  width: 100%;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .slider3 > .row > figure > figcaption {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  text-transform: capitalize;
+  background-color: white;
+  font-size: 18px;
+  margin: 30px 0;
+}
+main > .slider3 > .row > figure > figcaption > h4 {
+  width: 100%;
+}
+main > .slider3 > .row > figure > figcaption > p {
+  width: 50%;
+  color: #f81f1f;
+}
+main > .slider4 {
+  width: 100%;
+  margin: 80px 0;
+}
+main > .slider4 > .container {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  overflow: hidden;
+}
+main > .slider4 > .container > div {
+  overflow: hidden;
+  transition: 0.4s;
+  filter: grayscale(0%);
+}
+main > .slider4 > .container > div:hover {
+  filter: grayscale(60%);
+  transform: scale(98%);
+}
+main > .slider4 > .container > div > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .slider4 > .container > div:nth-of-type(1) {
+  grid-row: 1/span 2;
+  grid-column: 1/span 2;
+}
+main > .slider4 > .container > div:nth-of-type(2) {
+  grid-row: 1/span 2;
+}
+main > .slider5 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .slider5 > .row {
+  width: 100%;
+  height: 100%;
+  padding-left: 22%;
+  padding-right: 22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main > .slider5 > .row > h2 {
+  font-size: 50px;
+  line-height: 90px;
+}
+main > .slider5 > .row > p {
+  font-size: 20px;
+  padding: 5px 0;
+  color: #777;
+}
+main > .slider6 {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+main > .slider6 > .row {
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+main > .slider6 > .row > figure {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 4px solid #f81f1f;
+  transition: 1s;
+  padding-top: 50px;
+  position: relative;
+}
+main > .slider6 > .row > figure::after {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "Thermo Ball Etip Gloves";
+  color: #645d5d;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: -61px;
+  font-size: 20px;
+}
+main > .slider6 > .row > figure:hover > figcaption {
+  opacity: 1;
+}
+main > .slider6 > .row > figure > .img {
+  width: 100%;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .slider6 > .row > figure > figcaption {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f81f1f;
+  padding: 20px 0;
+  opacity: 0;
+  transition: 1s;
+}
+main > .slider6 > .row > figure > figcaption > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 17px;
+}
+main > .slider7 {
+  width: 100%;
+  margin-top: 120px;
+}
+main > .slider7 > .row {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+main > .slider7 > .row > div:first-of-type {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .slider7 > .row > div:first-of-type > section > h2 {
+  font-size: 50px;
+  margin: 30px 0;
+}
+main > .slider7 > .row > div:first-of-type > section > p {
+  font-size: 18px;
+  color: #777;
+  padding: 5px 0;
+}
+main > .slider7 > .row > div:first-of-type > section > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 180px;
+  height: 60px;
+  background-color: #f81f1f;
+  position: relative;
+}
+main > .slider7 > .row > div:first-of-type > section > a > p {
+  z-index: 10;
+  color: white;
+}
+main > .slider7 > .row > div:first-of-type > section > a:hover::before {
+  width: 100%;
+  height: 100%;
+}
+main > .slider7 > .row > div:first-of-type > section > a::before {
+  display: flex;
+  content: "";
+  width: 0%;
+  background-color: #645d5d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+main > .slider7 > .row > div:last-of-type {
+  width: 50%;
+}
+main > .slider7 > .row > div:last-of-type > figure {
+  width: 100%;
+  height: 100%;
+}
+main > .slider7 > .row > div:last-of-type > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .slider8 {
+  width: 100%;
+  margin-top: 120px;
+}
+main > .slider8 > .row {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+main > .slider8 > .row > div:first-of-type {
+  width: 50%;
+}
+main > .slider8 > .row > div:first-of-type > figure {
+  width: 100%;
+  height: 100%;
+}
+main > .slider8 > .row > div:first-of-type > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .slider8 > .row > div:last-of-type {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .slider8 > .row > div:last-of-type > section > h2 {
+  font-size: 50px;
+  margin: 30px 0;
+}
+main > .slider8 > .row > div:last-of-type > section > p {
+  font-size: 18px;
+  color: #777;
+  padding: 5px 0;
+}
+main > .slider8 > .row > div:last-of-type > section > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 180px;
+  height: 60px;
+  background-color: #f81f1f;
+  position: relative;
+}
+main > .slider8 > .row > div:last-of-type > section > a > p {
+  z-index: 10;
+  color: white;
+}
+main > .slider8 > .row > div:last-of-type > section > a:hover::before {
+  width: 100%;
+  height: 100%;
+}
+main > .slider8 > .row > div:last-of-type > section > a::before {
+  display: flex;
+  content: "";
+  width: 0%;
+  background-color: #645d5d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+main > .slider9 {
+  width: 100%;
+  margin-top: 140px;
+}
+main > .slider9 > .row {
+  width: 100%;
+  height: 230px;
+  padding-left: 12%;
+  padding-right: 12%;
+  background-color: white;
+}
+main > .slider9 > .row > section {
+  width: 100%;
+  height: 100%;
+  background-color: #ea0000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main > .slider9 > .row > section > div {
+  width: 30%;
+  height: 100%;
+  margin-top: 70px;
+  margin-left: 30px;
+}
+main > .slider9 > .row > section > div > * {
+  color: white;
+  margin: 20px 0;
+}
+main > .slider9 > .row > section > div > i {
+  font-size: 30px;
+}
+main > .slider9 > .row > section > div > h5 {
+  font-size: 20px;
+}
+main > .slider9 > .row > section > div > p {
+  color: #d3d1d1;
+  font-size: 16px;
+}
+main > .slider10 {
+  width: 100%;
+  margin-top: 150px;
+}
+main > .slider10 > .row {
+  width: 100%;
+  padding-left: 12%;
+  padding-right: 12%;
+  justify-content: space-evenly;
+}
+main > .slider10 > .row > div {
+  width: 25%;
+  height: 100%;
+}
+main > .slider10 > .row > div:nth-of-type(1) > a > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 20px;
+}
+main > .slider10 > .row > div:nth-of-type(1) > p {
+  line-height: 30px;
+  color: #868c98;
+  margin-left: 20px;
+}
+main > .slider10 > .row > div:nth-of-type(2) > h5, main > .slider10 > .row > div:nth-of-type(3) > h5, main > .slider10 > .row > div:nth-of-type(4) > h5 {
+  font-size: 20px;
+  margin: 20px;
+}
+main > .slider10 > .row > div:nth-of-type(2) > a, main > .slider10 > .row > div:nth-of-type(3) > a, main > .slider10 > .row > div:nth-of-type(4) > a {
+  color: #b4bac5;
+  line-height: 32px;
+  margin-left: 20px;
+  display: flex;
+  transition: 1s;
+}
+main > .slider10 > .row > div:nth-of-type(2) > a:hover, main > .slider10 > .row > div:nth-of-type(3) > a:hover, main > .slider10 > .row > div:nth-of-type(4) > a:hover {
+  color: #f81f1f;
+  transform: translateX(10px);
+}
+main > footer {
+  width: 100%;
+  margin-top: 40px;
+}
+main > footer > .row {
+  width: 100%;
+  height: 350px;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+main > footer > .row > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > footer > .row > div:nth-of-type(1) {
+  width: 100%;
+  height: 65%;
+}
+main > footer > .row > div:nth-of-type(1) > figure {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+main > footer > .row > div:nth-of-type(1) > figure > img {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > footer > .row > div:nth-of-type(2) {
+  width: 100%;
+  height: 15%;
+}
+main > footer > .row > div:nth-of-type(2) > a {
+  padding: 0 10px;
+}
+main > footer > .row > div:nth-of-type(2) > a:hover {
+  transform: scale(1.3);
+}
+main > footer > .row > div:nth-of-type(2) > a > i {
+  color: black;
+  font-size: 25px;
+  transition: 1s;
+}
+main > footer > .row > div:nth-of-type(2) > a > i:hover {
+  color: #f81f1f;
+}/*# sourceMappingURL=master.css.map */
