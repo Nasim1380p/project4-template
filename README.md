@@ -6,7 +6,6 @@
 
 ![img2-p4](https://github.com/Nasim1380p/project4-template/assets/155636802/c2d9ea6e-1361-4a84-a1b5-2ff7b496297b)
 
-![img4-p4](https://github.com/Nasim1380p/project4-template/assets/155636802/7bdc55ee-ce35-4bf6-86c0-beb629adf710)
 
 ![img3-p4](https://github.com/Nasim1380p/project4-template/assets/155636802/90f4f437-d6ac-4cf5-aa5d-6bf5f5d5fa68)
 
